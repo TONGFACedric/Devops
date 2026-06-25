@@ -1,0 +1,4 @@
+inbound 22 10.0.1.5/32 ALLOW
+inbound 22 0.0.0.0/0 DENY
+inbound 3306 10.0.2.0/24 ALLOW
+inbound 80 0.0.0.0/0 ALLOW
