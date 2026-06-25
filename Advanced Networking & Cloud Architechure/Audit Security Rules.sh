@@ -6,7 +6,7 @@ RULES_FILE="$1"
 
 # Check if file exists - if not, yell and exit
 if [ ! -f "$RULES_FILE" ]; then
-    echo "❌ ERROR: File '$RULES_FILE' not found!"
+    echo "ERROR: File '$RULES_FILE' not found!"
     echo "Usage: ./audit_security_rules.sh rules.txt"
     exit 1
 fi
