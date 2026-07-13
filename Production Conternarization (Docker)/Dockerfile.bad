@@ -1,0 +1,8 @@
+FROM ubuntu:22.04
+
+# BAD: 3 separate RUN commands = 3 layers!
+RUN apt-get update
+RUN apt-get install -y python3
+RUN apt-get install -y git
+
+CMD ["python3", "-c", "print('Hello from BAD image!')"]
