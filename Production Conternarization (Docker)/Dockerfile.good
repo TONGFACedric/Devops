@@ -1,0 +1,9 @@
+FROM ubuntu:22.04
+
+# GOOD: ONE RUN command with && and cleanup!
+RUN apt-get update && apt-get install -y \
+    python3 \
+    git \
+    && rm -rf /var/lib/apt/lists/*
+
+CMD ["python3", "-c", "print('Hello from GOOD image!')"]
